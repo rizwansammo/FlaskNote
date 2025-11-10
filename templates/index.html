@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FlaskNote</title>
+</head>
+<body>
+  <h1>📝 FlaskNote</h1>
+  <form action="/add" method="POST">
+    <input type="text" name="note" placeholder="Write a note..." required>
+    <button type="submit">Add</button>
+  </form>
+  <ul>
+    {% for note in notes %}
+      <li>{{ note }} <a href="/delete/{{ loop.index0 }}">🗑️</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
