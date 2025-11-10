@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+}
+.container {
+    width: 400px;
+    margin: 80px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+input, button {
+    padding: 8px;
+    margin: 5px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin: 8px 0;
+}
